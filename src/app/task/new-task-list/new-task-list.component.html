@@ -1,0 +1,12 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit(form,$event)">
+    <h4 md-dialog-title>{{title}}</h4>
+    <div md-dialog-content style="min-height: 130px">
+      <md-input-container class="full-width">
+        <input mdInput type="text" [placeholder]="title" formControlName="name">
+      </md-input-container>
+      <div md-dialog-actions>
+        <button type="submit" md-raised-button [disabled]="!form.valid" color="accent">保存</button>
+        <button type="button" md-button md-dialog-close>取消</button>
+      </div>
+    </div>
+  </form>

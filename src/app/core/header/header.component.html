@@ -1,0 +1,8 @@
+<md-toolbar color = "primary">
+  <button md-icon-button (click)="onClick()" *ngIf="(auth$ | async)?.token">
+    <md-icon svgIcon = "ball"></md-icon>
+  </button>
+  <span class="fill-remaining-space"></span>
+  <md-slide-toggle (change)="onChange($event.checked)">主题切换</md-slide-toggle>
+  <button md-button color="accent"  *ngIf="(auth$ | async)?.token" (click)="logOut()" >退出</button>
+</md-toolbar>

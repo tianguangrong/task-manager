@@ -1,0 +1,20 @@
+<md-sidenav-container [class.myapp-dark-theme]="darkTheme">
+  <md-sidenav #sidenav >
+    <app-sidebar (toggleSd)="sidenav.toggle()"></app-sidebar>
+  </md-sidenav>
+  <div class="site">
+    <header>
+      <app-header 
+      (toggle)="sidenav.toggle()"
+      (themeToggle)="themeChange($event)"
+      ></app-header>
+    </header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+  </div>
+</md-sidenav-container>
+

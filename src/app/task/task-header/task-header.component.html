@@ -1,0 +1,34 @@
+<div class="md-subheader">
+  <div>
+    <h5>{{header}}</h5>
+  </div>
+  <div>
+    <button md-button (click)="onCreateTaskClick()">
+      <md-icon>add_circle_outline</md-icon>
+      <span>新任务</span>
+    </button>
+  </div>
+  <div>
+    <button md-icon-button [mdMenuTriggerFor]="menu">
+      <md-icon>keyboard_arrow_down</md-icon>
+    </button>
+  </div>
+
+  <md-menu #menu="mdMenu"> 
+
+    <button md-menu-item (click)="onEditTaskNameClick()">
+      <md-icon>mode_edit</md-icon>
+      <span>修改列表名称</span>
+    </button>
+    <button md-menu-item (click)="onCopyTaskClick()">
+      <md-icon [svgIcon]="'move'" style="line-height: 23px"></md-icon>
+      <span>移动列表所有内容</span>
+    </button>
+    <button md-menu-item  (click)="onDeleteTaskClick()">
+      <md-icon>delete_forever</md-icon>
+      <span>删除列表</span>
+    </button>
+
+  </md-menu>
+
+</div>

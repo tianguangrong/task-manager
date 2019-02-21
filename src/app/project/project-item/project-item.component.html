@@ -1,0 +1,23 @@
+<md-card  (click)="enterTasklist($event)">
+  <md-card-header>
+    <md-card-title>{{item.name}}</md-card-title>
+  </md-card-header>
+  <img class="coverImg" [src]="item.coverImg" alt="项目封面">
+  <md-card-content>
+    {{item.desc}}
+  </md-card-content>
+  <md-card-actions>
+    <button md-button (click)="launchEditProjectClick($event)">
+      <md-icon>note</md-icon>
+      <span>编辑</span>
+    </button>
+    <button md-button (click)="launchInviteClick($event)">
+      <md-icon>group_add</md-icon>
+      <span>邀请</span>
+    </button>
+    <button md-button  (click)="launchDeleteClick($event)">
+      <md-icon>delete</md-icon>
+      <span>删除</span>
+    </button>
+  </md-card-actions>
+</md-card>

@@ -1,0 +1,14 @@
+<div class="host" [@list]="listAnim$ | async">
+  <app-project-item 
+  *ngFor="let project of (projects$ | async);let i = index"
+  [item]="project"
+  class="card"
+  (invite)="openInviteDialog(project)"
+  (editProject)="openEditDialog(project)"
+  (deleteProject)="openConfirmDialog(project)"
+  (selected)="openTaskListPage(project)"
+  ></app-project-item>
+  <button md-fab type="button" (click)="openNewProjectDialog()" class="fab-button">
+   <md-icon>add</md-icon>
+  </button>
+</div>

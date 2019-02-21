@@ -1,0 +1,25 @@
+<md-list-item
+  [ngClass]="{
+   'priority-normal':item.priority === 3, 
+   'priority-important':item.priority === 2, 
+   'priority-emergency':item.priority === 1
+  }"
+  [@itemState] = "state"
+  [app-draggbale] = "true"
+  [draggClass] =  "'dragging'"
+  [dragTag] = "'task-item'"
+  [dragData] = "'item'"
+
+>
+    <md-checkbox (click)="onClick($event)" class="complete-status" [checked]="item.completed"></md-checkbox>
+    <div md-line class="content" [class.completed]="item.completed">
+      <span [md-tooltip]="item.desc">{{item.desc}}</span>
+    </div>
+    <div md-line class="bottom-bar">
+      <span class="due-date" *ngIf="item.dueDate">
+        {{item.dueDate | date : "yy-MM-dd"}}
+      </span>
+      <md-icon *ngIf="item.remainder" class="remainder">alarm</md-icon>
+    </div>
+    <md-icon [svgIcon]="avatar" md-list-avatar class="avatar"></md-icon>
+</md-list-item>

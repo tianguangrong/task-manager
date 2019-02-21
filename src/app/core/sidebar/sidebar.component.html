@@ -1,0 +1,31 @@
+<div class="sidebar-container">
+    <md-nav-list dense>
+        <h3 md-subheader>首頁</h3>
+        <md-list-item [routerLink]="['/project']" (click)="onClick()">
+            <md-icon md-list-icon svgIcon="projects" style="align-self:self-start"></md-icon>
+            <span md-line>項目首頁</span>
+            <span  md-line md-subheader>查看項目詳情</span>
+        </md-list-item>
+        <md-list-item *ngFor="let pri of projects$ | async" (click)="onPriClick(pri)">
+            <md-icon md-list-icon svgIcon="project" style="align-self:self-start"></md-icon>
+            <span md-line>{{pri.name}}</span>
+            <span  md-line md-subheader>{{pri.desc}}</span>
+        </md-list-item>
+        <h3 md-subheader>日曆</h3>
+        <md-list-item [routerLink]="['/mycal/month']" (click)="onClick()">
+            <md-icon md-list-icon svgIcon="month" style="align-self:self-start"></md-icon>
+            <span md-line>月視圖</span>
+            <span  md-line md-subheader>查看您本月的所有項目</span>
+        </md-list-item>
+        <md-list-item  [routerLink]="['/mycal/week']" > 
+            <md-icon md-list-icon svgIcon="week" style="align-self:self-start"></md-icon>
+            <span md-line>周視圖</span>
+            <span  md-line md-subheader>查看您本周的所有項目</span>
+        </md-list-item>
+        <md-list-item  [routerLink]="['/mycal/day']" >
+            <md-icon md-list-icon [svgIcon]="today" style="align-self:self-start"></md-icon>
+            <span md-line>日視圖</span>
+            <span  md-line md-subheader>查看您當天的所有項目</span>
+        </md-list-item>
+    </md-nav-list>
+</div>

@@ -1,0 +1,36 @@
+<form action="" [formGroup]="form" (ngSubmit)="onSubmit($event,form)">
+  <div md-dialog-title>{{title}}</div>
+  <div md-dialog-content style="min-height: 250px"> 
+    <md-input-container class="full-width">
+      <input mdInput type="text" placeholder="任务内容" formControlName="des">
+    </md-input-container>
+    <md-radio-group formControlName="priority">
+      <md-radio-button *ngFor="let priority of priorities" [value]="priority.value">
+        {{priority.label}}
+      </md-radio-button>
+    </md-radio-group>
+    <div class="full-width">
+      <app-chips-list [label]="'更改执行者'" [multiple]="false"  formControlName="owner"></app-chips-list>
+    </div>
+    <md-input-container class="full-width">
+      <input mdInput type="text" placeholder="开始日期" [mdDatepicker]="startDatepicker" formControlName="dueDate">
+      <button type="button" mdSuffix [mdDatepickerToggle]="startDatepicker"></button>
+      <md-datepicker #startDatepicker></md-datepicker>
+    </md-input-container>
+    <md-input-container class="full-width">
+        <input mdInput type="text" placeholder="结束日期" [mdDatepicker]="overDatepicker" formControlName="remainder">
+        <button  type="button" mdSuffix [mdDatepickerToggle]="overDatepicker"></button>
+        <md-datepicker #overDatepicker></md-datepicker>
+      </md-input-container>
+      <div class="full-width">
+        <app-chips-list [label]="'更改参与者'" [multiple]="true"  formControlName="followers"></app-chips-list>
+      </div>
+      <md-input-container>
+        <textarea mdInput placeholder="备注" formControlName="remark" name="" id="" cols="" rows=""></textarea>
+      </md-input-container>
+  </div>
+  <div md-dialog-actions>
+      <button type="submit" md-raised-button [disabled]="!form.valid" color="accent">保存</button>
+    <button type="button" md-button md-dialog-close>关闭</button>
+  </div>
+</form>

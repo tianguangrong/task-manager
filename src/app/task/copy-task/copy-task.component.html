@@ -1,0 +1,13 @@
+<form action="" [formGroup]="form" (ngSubmit)="onSubmit($event,form)">
+    <h4 md-dialog-title>移动本列表所有内容：</h4>
+    <div md-dialog-content style="min-height: 100px">
+      <md-select placeholder="请选择目录" class="full-width" formControlName="targetListId">
+        <md-option *ngFor="let list of lists" [value]="list.id">{{list.name}}</md-option>
+      </md-select>
+      <div md-dialog-actions>
+        <button type="submit" md-raised-button [disabled]="!form.valid" color="accent">保存</button>
+        <button type="button" md-button md-dialog-close>删除 </button>
+      </div>
+    </div>
+  </form>
+  

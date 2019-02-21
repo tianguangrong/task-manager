@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+// 添加主题支持！
+//  @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'theme.scss';
+html,body,app-root,md-sidenav-container,.site{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.site{
+    display: flex;
+    flex-direction: column
+}
+main{
+    flex: 1;
+    display: flex;
+    align-content: center;
+}
+.full-width{
+    width:100%
+}
+.fill-remaining-space{
+    flex: 1 1 auto;
+}
+
+app-login{
+    width: 100%;
+}
+app-task-home{
+    width: 100%;
+}
+app-register{
+    width: 100%;
+}
+.dragging{
+    border:2px dashed red !important;
+    border-left:4px dashed red !important;
+    opacity: 0.6;
+}
+.dropping{
+    background: dimgray;
+    border: 1px solid white !important;
+}
+.text-right{
+    text-align: right;
+    margin-top: 20px;
+}

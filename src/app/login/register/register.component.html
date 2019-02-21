@@ -1,0 +1,52 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit(form,$event)">
+  <md-card class="card-container">
+      <md-tab-group>
+        <md-tab label="账户信息">
+          <md-card-header>
+            <md-card-title>登陆：</md-card-title>
+          </md-card-header>
+          <md-card-content>
+            <md-input-container align="end" floatPlaceholder="float" class="full-width">
+              <input mdInput type="email" placeholder ="email"  formControlName="email">
+             <md-error></md-error>
+             <md-hint>必填项</md-hint>
+            </md-input-container>
+            <md-input-container align="end" floatPlaceholder="float" class="full-width">
+              <input mdInput type="password" placeholder ="password"  formControlName="password">
+             <md-error></md-error>
+             <md-hint>请输入密码</md-hint>
+            </md-input-container>
+            <md-input-container align="end" floatPlaceholder="float" class="full-width">
+              <input mdInput type="password" placeholder ="repassword" formControlName="repassword">
+             <md-error></md-error>
+             <md-hint>请再次输入密码</md-hint>
+            </md-input-container>
+          </md-card-content>
+          <md-card-actions>
+            <span style="margin-left: 17px">选择头像：</span>
+            <app-image-list-select
+              [useSvgIcon]="true"
+              [cols]="7"
+              [rowHeight]="'50px'"
+              [items]="avatars"
+              [title]="'选择头像：'"
+              [itemWidth]="'40px'"
+              formControlName="avatar"
+            ></app-image-list-select>
+            <button type="submit" md-raised-button>注册</button>
+          </md-card-actions>
+        </md-tab>
+        <md-tab label="个人信息">
+          <div class="full-width">
+            <app-identity-input formControlName="identity"></app-identity-input>
+          </div>
+          <div class="full-width">
+            <app-age-input formControlName="dateOfBirth"></app-age-input>
+          </div>
+          <div class="full-width">
+            <app-area-list formControlName="address"></app-area-list>
+          </div>
+        </md-tab>
+      </md-tab-group>
+    </md-card>
+</form>

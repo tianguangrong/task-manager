@@ -1,0 +1,16 @@
+// @import '~@angular/material/theming';
+
+// @include mat-core();
+
+// $my-primary-color:mat-palette($mat-indigo);
+// $my-accent-color:mat-palette($mat-pick);
+// $my-warn-color:mat-palette($mat-red);
+
+// $my-light-theme:mat-light-theme($my-primary-color,$my-accent-color,$my-warn-color);
+
+// @include angular-material-theme($my-light-theme);
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+ .myapp-dark-theme {
+     @import '~@angular/material/prebuilt-themes/purple-green.css';
+}

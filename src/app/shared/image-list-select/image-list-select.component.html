@@ -1,0 +1,26 @@
+<div>
+  <!-- <span>{{title}}</span> -->
+  <md-icon class="avatar avatar-tip" [svgIcon]="selected" *ngIf="useSvgIcon else imgSelect"></md-icon>
+  <ng-template #imgSelect>
+    <img [src]="selected" alt="image selected" class="cover">
+  </ng-template>
+</div>
+<div class="hint-scroll"> 
+  <div class="scroll-container">
+    <md-grid-list [cols]="cols" [rowHeight]="rowHeight">
+        <md-grid-tile *ngFor="let item of items; let i = index">
+          <div class="image-container" (click)="onChange(i)">
+              <md-icon [svgIcon]="item" *ngIf="useSvgIcon else imgItem" class="avatar"></md-icon>
+              <ng-template #imgItem>
+                <img [src]="item" alt="image item" [ngStyle]="{'width':itemWidth}">
+              </ng-template>
+            <div class="after">
+              <div class="zoom">
+                <md-icon>checked</md-icon>
+              </div>
+            </div>
+          </div>
+        </md-grid-tile>
+      </md-grid-list>
+</div>
+</div>

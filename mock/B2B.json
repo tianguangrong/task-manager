@@ -1,0 +1,281 @@
+{
+    "datas":[
+        {
+    
+            "Weight_cateagery": [
+                {
+                    "status": "1",
+                    "descrip": "吨",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1000,
+                    "id": 1,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "kg",
+                    "is_normal": 1,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 0,
+                    "id": 2,
+                    "domain_no": 2300,
+                    "remark": "ceshiyixiahahahah",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "g",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1000000,
+                    "id": 4,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "hg",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 10000,
+                    "id": 9,
+                    "domain_no": 2300,
+                    "remark": "ceshiw",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "mg",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1000000000,
+                    "id": 10,
+                    "domain_no": 2300,
+                    "remark": "ceshi",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "dd",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1000,
+                    "id": 11,
+                    "domain_no": 2300,
+                    "remark": "eeeee",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "22",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1,
+                    "id": 12,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 2
+                }
+            ],
+            "isContent": [
+                {
+                    "status": 1,
+                    "descrip": "袋",
+                    "is_normal": 0,
+                    "need_convert": 1,
+                    "unit_id": 3,
+                    "conversion": 1,
+                    "attribute2": "1",
+                    "id": 3,
+                    "domain_no": 2300,
+                    "class_id": 129,
+                    "dim_type": 1
+                },
+                {
+                    "status": 1,
+                    "descrip": "支",
+                    "is_normal": 0,
+                    "need_convert": 1,
+                    "unit_id": 5,
+                    "conversion": 1,
+                    "attribute2": "1",
+                    "id": 5,
+                    "domain_no": 2300,
+                    "class_id": 129,
+                    "dim_type": 1
+                },
+                {
+                    "status": 1,
+                    "descrip": "辆",
+                    "is_normal": 0,
+                    "need_convert": 0,
+                    "unit_id": 7,
+                    "conversion": 1,
+                    "attribute2": "1",
+                    "id": 7,
+                    "domain_no": 2300,
+                    "class_id": 129,
+                    "dim_type": 1
+                }
+            ],
+            "all_cateagery": [
+                {
+                    "status": "1",
+                    "descrip": "吨",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1000,
+                    "id": 1,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "kg",
+                    "is_normal": 1,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 0,
+                    "id": 2,
+                    "domain_no": 2300,
+                    "remark": "ceshiyixiahahahah",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "袋",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1,
+                    "id": 3,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 1
+                },
+                {
+                    "status": "1",
+                    "descrip": "g",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1000000,
+                    "id": 4,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "支",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1,
+                    "id": 5,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 1
+                },
+                {
+                    "status": "1",
+                    "descrip": "件",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1,
+                    "id": 6,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 1
+                },
+                {
+                    "status": "1",
+                    "descrip": "辆",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1,
+                    "id": 7,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 1
+                },
+                {
+                    "status": "1",
+                    "descrip": "个",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 0,
+                    "id": 8,
+                    "domain_no": 2300,
+                    "remark": "测试",
+                    "dim_type": 1
+                },
+                {
+                    "status": "1",
+                    "descrip": "hg",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 10000,
+                    "id": 9,
+                    "domain_no": 2300,
+                    "remark": "ceshiw",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "mg",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1000000000,
+                    "id": 10,
+                    "domain_no": 2300,
+                    "remark": "ceshi",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "dd",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1000,
+                    "id": 11,
+                    "domain_no": 2300,
+                    "remark": "eeeee",
+                    "dim_type": 2
+                },
+                {
+                    "status": "1",
+                    "descrip": "22",
+                    "is_normal": 0,
+                    "leave_cal": 0,
+                    "precision": 0,
+                    "conversion": 1,
+                    "id": 12,
+                    "domain_no": 2300,
+                    "remark": "无",
+                    "dim_type": 2
+                }
+            ]
+            
+        }
+    ]
+}

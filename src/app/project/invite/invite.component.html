@@ -1,0 +1,10 @@
+<form #f="ngForm" (ngSubmit)="onSubmit($event,f)" action="">
+  <h4 md-dialog-title>邀请成员</h4>
+  <div md-dialog-content style="height: 250px">
+    <app-chips-list [label]="'邀请成员'" name="members" [(ngModel)]="members"></app-chips-list>
+    <div md-dialog-actions>
+      <button  type="submit" md-raised-button color="accent" [disabled]="!f.form.valid">邀请</button>
+      <button type="button" md-button md-dialog-close>取消</button>
+    </div>
+  </div>
+</form>
